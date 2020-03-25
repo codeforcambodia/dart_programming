@@ -1,28 +1,28 @@
 void main() {
   print("Case 1");
-  try{
-    int n = 12 ~/ 4;
-    print(n);
-  } on IntegerDivisionByZeroException {
-    print("Cannot divide by zero");
-  }
+  // try{
+  //   int n = 12 ~/ 4;
+  //   print(n);
+  // } on IntegerDivisionByZeroException {
+  //   print("Cannot divide by zero");
+  // }
 
-  print("Case 2");
-  try {
-    int n = 12 ~/ 0;
-    print(n);
-  } catch (e) {
-    print("hello");
-    print(e);
-  }
+  // print("Case 2");
+  // try {
+  //   int n = 12 ~/ 0;
+  //   print(n);
+  // } catch (e) {
+  //   print("hello");
+  //   print(e);
+  // }
 
-  /* Case 5 */
-  print("Case 5");
-  try {
-    depositMoney(-1);
-  } catch (e) {
-    print(e.errorMessage());
-  }
+  // /* Case 5 */
+  // print("Case 5");
+  // try {
+  //   depositMoney(-1);
+  // } catch (e) {
+  //   print(e.errorMessage());
+  // }
 }
 
 class DepositException implements Exception{
